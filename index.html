@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Adivina el numero</title>
+  </head>
+  <body>
+    <h1>¡ADIVINA EL NUMERO!</h1>
+    <main>
+      <section class="game-section">
+        <div class="contenedor">
+          <h2>Para jugar, introduce un numero del 1 al 10:</h2>
+          <div class="adivinar">
+            <input id="number" type="number" min="0" max="10" />
+            <button id="boton" onclick="VerParrafo()">COMPROBAR</button>
+          </div>
+          <p class="animate__animated" id="texto-resultado"></p>
+          <p class="numintentos">Intentos: <span id="intentos">0</span></p>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
